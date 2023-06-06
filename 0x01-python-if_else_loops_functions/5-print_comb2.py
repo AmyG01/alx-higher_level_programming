@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for i in range(ord('z'), ord('a') - 1, -1):
-    print(chr(i), end='')
-    if i % 2 == 0:
-        i -= 1
+for i in range(0, 100):
+    if i < 99:
+        print("{:02d}".format(i), end=", ")
     else:
-        i += 1
+        print("{:02d}".format(i))
